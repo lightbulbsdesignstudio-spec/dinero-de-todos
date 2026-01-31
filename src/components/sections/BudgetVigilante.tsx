@@ -22,6 +22,7 @@ import {
 import * as d3 from 'd3';
 import { sankey, sankeyLinkHorizontal, sankeyCenter } from 'd3-sankey';
 import { useBudgetData } from '@/hooks/useBudgetData';
+import Link from 'next/link';
 
 // BUDGET_TOTAL, SANKEY_DATA y STRATEGIC_PROJECTS removidos - ahora se consumen via useBudgetData
 
@@ -246,27 +247,50 @@ export default function BudgetVigilante() {
                                     <span className="block text-[10px] font-black uppercase tracking-[0.2em] text-red-500 mb-4">Gasto Inerte (🔴)</span>
                                     <div className="space-y-4">
                                         <RubroItem
-                                            label="Burocracia"
-                                            value={`~${data.indicators.bureaucracy_budget_share}%`}
+                                            label="Gasto Operativo (Burocracia)"
+                                            value={`${data.indicators.bureaucracy_budget_share}%`}
                                             tooltip={OPPORTUNITY_COSTS.burocracia}
                                         />
                                         <RubroItem
-                                            label="Rescates Estatales"
+                                            label="Subsidios a Pérdidas (Pemex/CFE)"
                                             value={`${data.indicators.state_rescues_share}%`}
                                             tooltip={OPPORTUNITY_COSTS.rescates}
                                         />
                                         <RubroItem
-                                            label="Centro del País"
+                                            label="Concentración Regional (Centro)"
                                             value="51.4%"
                                             tooltip={OPPORTUNITY_COSTS.concentracion}
                                         />
                                         <RubroItem
-                                            label="Reparto de Megaproyectos"
+                                            label="Concentración en 13 Obras"
                                             value={`${data.strategic_projects_concentration.share_of_investment}%`}
                                             tooltip={OPPORTUNITY_COSTS.gotera}
                                         />
                                     </div>
                                 </div>
+                                <Link
+                                    href="/inteligencia-de-contratos"
+                                    className="block w-full bg-[#00A896] hover:bg-[#008c7d] text-white p-6 rounded-[32px] shadow-xl hover:shadow-2xl transition-all group overflow-hidden relative"
+                                >
+                                    <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+                                    <div className="relative z-10 flex items-center justify-between">
+                                        <div>
+                                            <div className="flex items-center gap-2 text-xs font-black uppercase tracking-widest text-white/80 mb-1">
+                                                <Search className="w-3 h-3" />
+                                                Vigilancia 2026
+                                            </div>
+                                            <div className="text-xl font-black leading-tight">
+                                                ¿Quién recibe<br />estos contratos?
+                                            </div>
+                                        </div>
+                                        <div className="bg-white/20 p-3 rounded-full group-hover:scale-110 transition-transform">
+                                            <ChevronRight className="w-6 h-6 text-white" />
+                                        </div>
+                                    </div>
+                                    <div className="mt-4 text-xs font-medium text-white/90">
+                                        Audita a las empresas ganadoras
+                                    </div>
+                                </Link>
                             </div>
                         </motion.div>
                     )}
@@ -305,10 +329,10 @@ function RubroItem({ label, value, tooltip }: { label: string, value: string, to
 }
 
 const OPPORTUNITY_COSTS = {
-    burocracia: "Pagamos carísimo por tener oficinas llenas de papel. Mantener burocracia nos cuesta 25 veces más que inventar nuevas medicinas o tecnología.",
-    rescates: "El gobierno está usando tu IVA para pagar los errores de PEMEX y CFE. Ese dinero no bajó tu luz, solo tapó el hoyo que dejaron otros.",
-    concentracion: "La mitad del dinero se queda solo en 3 estados. Si no vives en CDMX, Edomex o Veracruz, a tu estado le toca pelear por las sobras.",
-    gotera: "Los megaproyectos del gobierno son como una tina llena, mientras que las escuelas de tu colonia apenas reciben la 'gotera' de lo que sobra."
+    burocracia: "Son sueldos, oficinas y papelería. NO es inversión. Cada peso aquí es un peso que no se usa para medicinas.",
+    rescates: "Dinero 'quemado' para pagar deudas de PEMEX y CFE. No genera luz más barata, solo cubre pérdidas financieras.",
+    concentracion: "El 51% del presupuesto se gasta en solo 3 estados (CDMX, Tabasco, Campeche). El resto del país recibe las sobras.",
+    gotera: "El 42.3% de toda la inversión del país se va a solo 13 megaproyectos. Los otros 886 proyectos locales se pelean por migajas."
 };
 
 function OjoCriticoCard({ title, value, description, criticalQuestion, status }: any) {

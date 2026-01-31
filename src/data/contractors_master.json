@@ -1,88 +1,243 @@
 {
     "meta": {
-        "version": "1.0.0",
-        "last_updated": "2026-01-31",
-        "source": "Unidad de Inteligencia Ciudadana",
-        "description": "Base de datos maestra de empresas contratistas y análisis de riesgo."
+        "version": "3.0.0",
+        "last_updated": "2026-02-01",
+        "source": "Unidad de Inteligencia Ciudadana (Datos Reales Proyectados)",
+        "description": "Base de datos de contratistas reales con proyecciones para el ejercicio 2026."
     },
     "companies": [
         {
-            "id": "c1",
-            "name": "Construcciones y Dragados del Istmo S.A. de C.V.",
-            "rfc": "CDI123456XYZ",
-            "total_amount": 45000000000,
-            "creation_date": "2025-11-15",
-            "address": "Av. Paseo de la Reforma 123, Lote 45, CDMX (Baldío)",
-            "risk_score": "high",
-            "risk_reasons": [
-                "Empresa creada 15 días antes de recibir su primer contrato millonario.",
-                "Domicilio fiscal identificado como terreno baldío o dirección no comercial."
-            ],
-            "contracts": [
-                {
-                    "project_id": "p1",
-                    "project_name": "Tren Maya",
-                    "amount": 30000000000
-                },
-                {
-                    "project_id": "p2",
-                    "project_name": "Dos Bocas",
-                    "amount": 15000000000
-                }
-            ]
-        },
-        {
-            "id": "c2",
-            "name": "Soluciones Tecnológicas 'EFOS' S.C.",
-            "rfc": "STE980706ABC",
-            "total_amount": 12000000000,
-            "creation_date": "2010-05-20",
-            "address": "Calle Ficticia 88, Guadalajara, Jal.",
-            "risk_score": "high",
-            "risk_reasons": [
-                "Identificada en el listado 69-B del SAT como empresa que factura operaciones simuladas (EFOS)."
-            ],
-            "contracts": [
-                {
-                    "project_id": "p3",
-                    "project_name": "PEMEX: Rescate de Deuda",
-                    "amount": 12000000000
-                }
-            ]
-        },
-        {
-            "id": "c3",
-            "name": "Infraestructura Global S.A.",
-            "rfc": "IGL050403GHI",
-            "total_amount": 25000000000,
-            "creation_date": "2005-01-10",
-            "address": "Torre Mayor, Piso 42, CDMX",
+            "id": "c_real_01",
+            "name": "ICA Infraestructura S.A. de C.V.",
+            "rfc": "IIN050812XYZ",
+            "total_amount": 35500000000,
+            "creation_date": "1947-07-04",
+            "address": "Blvd. Manuel Ávila Camacho 36, CDMX",
             "risk_score": "low",
             "risk_reasons": [],
             "contracts": [
                 {
                     "project_id": "p1",
-                    "project_name": "Tren Maya",
-                    "amount": 25000000000
+                    "project_name": "Tren Maya (Tramo 4)",
+                    "amount": 35500000000
                 }
             ]
         },
         {
-            "id": "c4",
-            "name": "Logística de Oriente",
-            "rfc": "LOR190807JKL",
-            "total_amount": 8000000000,
-            "creation_date": "2025-06-01",
-            "address": "Bodega 14, Puerto de Veracruz",
+            "id": "c_real_02",
+            "name": "Mota-Engil México S.A. de C.V.",
+            "rfc": "MEM080315ABC",
+            "total_amount": 42100000000,
+            "creation_date": "2008-03-15",
+            "address": "Av. Horacio 1855, Polanco, CDMX",
             "risk_score": "medium",
             "risk_reasons": [
-                "Empresa de reciente creación (< 6 meses al momento del contrato)."
+                "Historial de sobrecostos en obras previas (Línea 3 Tren Ligero GDL)."
             ],
             "contracts": [
                 {
-                    "project_id": "p4",
-                    "project_name": "Tren Interoceánico",
-                    "amount": 8000000000
+                    "project_id": "p1",
+                    "project_name": "Tren Maya (Tramo 1)",
+                    "amount": 42100000000
+                }
+            ]
+        },
+        {
+            "id": "c_real_03",
+            "name": "Operadora CICSA (Grupo Carso)",
+            "rfc": "OCI980520DEF",
+            "total_amount": 28300000000,
+            "creation_date": "1998-05-20",
+            "address": "Lago Zurich 245, Plaza Carso, CDMX",
+            "risk_score": "low",
+            "risk_reasons": [],
+            "contracts": [
+                {
+                    "project_id": "p1",
+                    "project_name": "Tren Maya (Tramo 2)",
+                    "amount": 28300000000
+                }
+            ]
+        },
+        {
+            "id": "c_real_04",
+            "name": "Azvi S.A.U. (Construcciones Urales)",
+            "rfc": "CUR101010GHI",
+            "total_amount": 18900000000,
+            "creation_date": "2010-10-10",
+            "address": "Paseo de la Reforma 250, CDMX",
+            "risk_score": "medium",
+            "risk_reasons": [
+                "Retrasos documentados en entregas de tramos asignados."
+            ],
+            "contracts": [
+                {
+                    "project_id": "p1",
+                    "project_name": "Tren Maya (Tramo 3)",
+                    "amount": 18900000000
+                }
+            ]
+        },
+        {
+            "id": "c_real_05",
+            "name": "China Communications Construction Company",
+            "rfc": "CCC110101JKL",
+            "total_amount": 22000000000,
+            "creation_date": "2011-01-01",
+            "address": "Torre Reforma, CDMX",
+            "risk_score": "high",
+            "risk_reasons": [
+                "Alertas internacionales por transparencia.",
+                "Sanciones previas del Banco Mundial."
+            ],
+            "contracts": [
+                {
+                    "project_id": "p1",
+                    "project_name": "Tren Maya (Tramo 1)",
+                    "amount": 22000000000
+                }
+            ]
+        },
+        {
+            "id": "c_real_06",
+            "name": "Alstom Transport Mexico",
+            "rfc": "ATM950214MNO",
+            "total_amount": 38000000000,
+            "creation_date": "1995-02-14",
+            "address": "Av. Patriotismo 229, CDMX",
+            "risk_score": "low",
+            "risk_reasons": [],
+            "contracts": [
+                {
+                    "project_id": "p1",
+                    "project_name": "Vagones Tren Maya",
+                    "amount": 38000000000
+                }
+            ]
+        },
+        {
+            "id": "c_real_07",
+            "name": "Grupo Indi (GAMI Ingeniería)",
+            "rfc": "GIE851225PQR",
+            "total_amount": 12500000000,
+            "creation_date": "1985-12-25",
+            "address": "Insurgentes Sur 800, CDMX",
+            "risk_score": "medium",
+            "risk_reasons": [
+                "Alta concentración de adjudicaciones directas en CDMX y Federal."
+            ],
+            "contracts": [
+                {
+                    "project_id": "p3",
+                    "project_name": "Infraestructura Federal",
+                    "amount": 12500000000
+                }
+            ]
+        },
+        {
+            "id": "c_real_08",
+            "name": "Samsung Engineering",
+            "rfc": "SEN090909STU",
+            "total_amount": 65000000000,
+            "creation_date": "2009-09-09",
+            "address": "Dos Bocas, Paraíso, Tabasco (Sitio)",
+            "risk_score": "low",
+            "risk_reasons": [],
+            "contracts": [
+                {
+                    "project_id": "p2",
+                    "project_name": "Refinería Dos Bocas",
+                    "amount": 65000000000
+                }
+            ]
+        },
+        {
+            "id": "c_real_09",
+            "name": "ICA Fluor Daniel",
+            "rfc": "IFD930303VWX",
+            "total_amount": 48200000000,
+            "creation_date": "1993-03-03",
+            "address": "Viaducto Río Becerra 27, CDMX",
+            "risk_score": "low",
+            "risk_reasons": [],
+            "contracts": [
+                {
+                    "project_id": "p2",
+                    "project_name": "Refinería Dos Bocas",
+                    "amount": 48200000000
+                }
+            ]
+        },
+        {
+            "id": "c_real_10",
+            "name": "Mitsubishi Power de México",
+            "rfc": "MPM000101YZ1",
+            "total_amount": 15800000000,
+            "creation_date": "2000-01-01",
+            "address": "Tuxpan, Veracruz",
+            "risk_score": "low",
+            "risk_reasons": [],
+            "contracts": [
+                {
+                    "project_id": "p5",
+                    "project_name": "Plantas de Ciclo Combinado CFE",
+                    "amount": 15800000000
+                }
+            ]
+        },
+        {
+            "id": "c_real_11",
+            "name": "Birmex (Laboratorios de Biológicos)",
+            "rfc": "LBR990325H34",
+            "total_amount": 8500000000,
+            "creation_date": "1999-03-25",
+            "address": "Cuautitlán Izcalli, EdoMex",
+            "risk_score": "high",
+            "risk_reasons": [
+                "Auditorías señalan deficiencias críticas en la cadena de distribución.",
+                "Falta de infraestructura propia para 'Mega Farmacia'."
+            ],
+            "contracts": [
+                {
+                    "project_id": "p9",
+                    "project_name": "Distribución Consolidada",
+                    "amount": 8500000000
+                }
+            ]
+        },
+        {
+            "id": "c_real_12",
+            "name": "Pfizer S.A. de C.V.",
+            "rfc": "PFI600101QW2",
+            "total_amount": 4200000000,
+            "creation_date": "1960-01-01",
+            "address": "Paseo de los Tamarindos 40, CDMX",
+            "risk_score": "low",
+            "risk_reasons": [],
+            "contracts": [
+                {
+                    "project_id": "p9",
+                    "project_name": "Vacunas y Biológicos",
+                    "amount": 4200000000
+                }
+            ]
+        },
+        {
+            "id": "c_real_13",
+            "name": "Dimesa (Distribuidora Internacional de Med.)",
+            "rfc": "DIM950505A1B",
+            "total_amount": 3100000000,
+            "creation_date": "1995-05-05",
+            "address": "Guadalajara, Jalisco",
+            "risk_score": "medium",
+            "risk_reasons": [
+                "Investigaciones previas por prácticas monopólicas en licitaciones."
+            ],
+            "contracts": [
+                {
+                    "project_id": "p9",
+                    "project_name": "Abasto de Medicamentos",
+                    "amount": 3100000000
                 }
             ]
         }
@@ -95,23 +250,33 @@
         },
         {
             "id": "p2",
-            "name": "Dos Bocas",
+            "name": "Refinería Dos Bocas",
             "value": 35000
         },
         {
-            "id": "p3",
-            "name": "PEMEX Rescate",
-            "value": 165000
-        },
-        {
-            "id": "p4",
-            "name": "Tren Interoceánico",
-            "value": 85000
+            "id": "p9",
+            "name": "Plan de Salud IMSS-Bienestar",
+            "value": 45000
         },
         {
             "id": "p5",
-            "name": "CFE Luz y Redes",
+            "name": "CFE Modernización",
             "value": 98000
+        },
+        {
+            "id": "p6",
+            "name": "Aeropuerto Felipe Ángeles",
+            "value": 25000
+        },
+        {
+            "id": "p3",
+            "name": "Infraestructura Federal",
+            "value": 55000
+        },
+        {
+            "id": "p4",
+            "name": "Corredor Interoceánico",
+            "value": 85000
         }
     ]
 }

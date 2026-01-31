@@ -94,7 +94,7 @@ export default function ContractNetwork() {
                             <span className="block text-[10px] font-black uppercase tracking-widest text-gray-600 mb-2">Contratado Real (Muestra)</span>
                             <div className="flex items-end gap-2">
                                 <div className="text-3xl font-black text-white leading-none">
-                                    ${humanizarNumero(project.totalProjectContracts).textoCorto}
+                                    {humanizarNumero(project.totalProjectContracts).textoCorto}
                                 </div>
                                 <TrendingUp className="w-4 h-4 text-[#00A896] mb-1" />
                             </div>
@@ -122,7 +122,7 @@ export default function ContractNetwork() {
                                                 <span className="block text-sm font-bold text-gray-300 truncate w-32 group-hover/item:text-white transition-colors">{winner.name}</span>
                                             </div>
                                         </div>
-                                        <span className="text-xs font-black text-white">${humanizarNumero(winner.projectAmount).textoCorto}</span>
+                                        <span className="text-xs font-black text-white">{humanizarNumero(winner.projectAmount).textoCorto}</span>
                                     </div>
                                 ))}
                                 {project.winners.length === 0 && (
@@ -140,6 +140,20 @@ export default function ContractNetwork() {
                         </div>
                     </motion.div>
                 ))}
+            </div>
+
+            {/* Context Disclaimer */}
+            <div className="mt-12 bg-amber-500/10 border border-amber-500/20 rounded-2xl p-6 flex items-start gap-4 max-w-4xl mx-auto">
+                <div className="p-2 bg-amber-500/20 rounded-lg shrink-0">
+                    <CircleAlert className="w-5 h-5 text-amber-500" />
+                </div>
+                <div>
+                    <h4 className="text-sm font-black text-amber-500 uppercase tracking-widest mb-1">Alcance de la Muestra</h4>
+                    <p className="text-sm text-gray-400 font-medium leading-relaxed">
+                        ⚠️ <span className="text-white font-bold">Proyección 2026:</span> Las empresas listadas son contratistas reales con adjudicaciones vigentes o multianuales.
+                        Los montos específicos para el ejercicio 2026 son <span className="text-white underline decoration-amber-500/50">proyecciones basadas en el PEF y contratos previos</span>.
+                    </p>
+                </div>
             </div>
 
             {/* Drill-Down Modal (Slide Over) */}
@@ -183,7 +197,7 @@ export default function ContractNetwork() {
                                 <h2 className="text-4xl font-black text-white mb-2 leading-tight">{selectedProject.name}</h2>
                                 <div className="flex items-baseline gap-2 text-gray-400 font-medium">
                                     <span>Inversión Total Auditada:</span>
-                                    <span className="text-white font-bold">${humanizarNumero(selectedProject.totalProjectContracts).texto}</span>
+                                    <span className="text-white font-bold">{humanizarNumero(selectedProject.totalProjectContracts).texto}</span>
                                 </div>
                             </div>
 
@@ -213,7 +227,7 @@ export default function ContractNetwork() {
                                             {/* Right: Amount & Risk Badge */}
                                             <div className="flex items-center gap-6">
                                                 <div className="text-right">
-                                                    <span className="block text-sm font-black text-white">${humanizarNumero(winner.projectAmount).textoCorto}</span>
+                                                    <span className="block text-sm font-black text-white">{humanizarNumero(winner.projectAmount).textoCorto}</span>
                                                     <span className="text-[10px] text-gray-500">Monto Asignado</span>
                                                 </div>
 
