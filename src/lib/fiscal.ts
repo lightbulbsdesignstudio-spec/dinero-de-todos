@@ -20,6 +20,13 @@ export interface EvaluacionEquidad {
     icono: string;
 }
 
+export interface EvaluacionMexicana {
+    calificacion: number;
+    mensaje: string;
+    color: string;
+    subtexto: string;
+}
+
 const ESTADOS_PETROLEROS = ['cam', 'tab'];
 const ESTADOS_FRONTERIZOS = ['bc', 'son', 'chih', 'coah', 'nl', 'tam'];
 const ESTADOS_TURISTICOS = ['qroo', 'bcs'];
@@ -84,4 +91,16 @@ export function evaluarEquidad(estado: Estado, promedioNacional: number): Evalua
         color: '#10b981',
         icono: '✓'
     };
+}
+
+export function getCalificacionMexicana(score: number): EvaluacionMexicana {
+    if (score >= 9) {
+        return { calificacion: score, mensaje: 'Excelente', color: '#10b981', subtexto: 'El gasto está alineado con las mejores prácticas internacionales.' };
+    } else if (score >= 8) {
+        return { calificacion: score, mensaje: 'Bueno', color: '#3b82f6', subtexto: 'Buen desempeño, aunque hay áreas de oportunidad en inversión.' };
+    } else if (score >= 6) {
+        return { calificacion: score, mensaje: 'Regular', color: '#f59e0b', subtexto: 'Se detectan riesgos de ineficiencia y concentración.' };
+    } else {
+        return { calificacion: score, mensaje: 'Reprobado', color: '#ef4444', subtexto: 'Alerta crítica: El presupuesto muestra desviaciones severas.' };
+    }
 }
