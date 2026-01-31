@@ -1,0 +1,350 @@
+{
+    "meta": {
+        "version": "PEF 2026 Updated (Auto-7220)",
+        "last_updated": "2026-01-31",
+        "source_url": "https://www.transparencia.hacienda.gob.mx"
+    },
+    "indicators": {
+        "national_score": 5.8,
+        "innovation_gdp": 0.4,
+        "health_budget_share": 12.4,
+        "infrastructure_gdp": 2.5,
+        "education_budget_share": 4.2,
+        "bureaucracy_budget_share": 8.2,
+        "state_rescues_share": 57.4
+    },
+    "income_sources": [
+        {
+            "id": "isr",
+            "nombre": "ISR (Impuesto sobre la Renta)",
+            "monto": 3100000000000,
+            "porcentaje": 30.4,
+            "color": "#00A896"
+        },
+        {
+            "id": "iva",
+            "nombre": "IVA (Impuesto al Valor Agregado)",
+            "monto": 1500000000000,
+            "porcentaje": 14.7,
+            "color": "#00A896"
+        },
+        {
+            "id": "ieps",
+            "nombre": "IEPS (Gasolinas y Alimentos)",
+            "monto": 650000000000,
+            "porcentaje": 6.4,
+            "color": "#F29100"
+        },
+        {
+            "id": "petroleo",
+            "nombre": "Ingresos Petroleros",
+            "monto": 1200000000000,
+            "porcentaje": 11.8,
+            "color": "#1E293B"
+        },
+        {
+            "id": "deuda_ingreso",
+            "nombre": "Préstamos y Deuda",
+            "monto": 1570000000000,
+            "porcentaje": 15.4,
+            "color": "#EF4444"
+        },
+        {
+            "id": "otros",
+            "nombre": "Otros Ingresos",
+            "monto": 2170000000000,
+            "porcentaje": 21.3,
+            "color": "#64748B"
+        }
+    ],
+    "budget_totals": {
+        "grand_total": 10190001168343,
+        "programmable": 7090000000000,
+        "debt_cost": 1570000000000,
+        "physical_investment": 976800000000
+    },
+    "strategic_projects": [
+        {
+            "name": "PEMEX: Rescate de Deuda",
+            "value": 165000,
+            "description": "Dinero de tus impuestos que se va directo a pagar las deudas y pérdidas de la empresa.",
+            "coordinates": {
+                "lat": 19.4326,
+                "lng": -99.1332
+            },
+            "impact_radius": "Nacional"
+        },
+        {
+            "name": "Tren Maya",
+            "value": 142000,
+            "description": "La obra más grande del sexenio pasado que aún sigue consumiendo presupuesto para operar.",
+            "coordinates": {
+                "lat": 20.6296,
+                "lng": -87.0739
+            },
+            "impact_radius": "Regional (Sureste)"
+        },
+        {
+            "name": "CFE: Luz y Redes",
+            "value": 98000,
+            "description": "Para intentar que no haya apagones y mantener las plantas viejas funcionando.",
+            "coordinates": {
+                "lat": 23.6345,
+                "lng": -102.5528
+            },
+            "impact_radius": "Nacional"
+        },
+        {
+            "name": "Tren Interoceánico",
+            "value": 85000,
+            "description": "La apuesta para conectar los dos océanos por tren y mover carga mundial.",
+            "coordinates": {
+                "lat": 16.9073,
+                "lng": -94.9719
+            },
+            "impact_radius": "Regional (Istmo)"
+        },
+        {
+            "name": "Guardia Nacional: Cuarteles",
+            "value": 72000,
+            "description": "Construcción de bases militares en todo el país para tareas de seguridad.",
+            "coordinates": {
+                "lat": 21.0,
+                "lng": -101.0
+            },
+            "impact_radius": "Nacional"
+        },
+        {
+            "name": "Aeropuerto AIFA",
+            "value": 45000,
+            "description": "Subsidios y mantenimiento para que el aeropuerto de Santa Lucía siga operando.",
+            "coordinates": {
+                "lat": 19.7537,
+                "lng": -99.0189
+            },
+            "impact_radius": "Local"
+        },
+        {
+            "name": "Tren México-Querétaro",
+            "value": 38000,
+            "description": "El nuevo intento por conectar estas ciudades con un tren de pasajeros rápido.",
+            "coordinates": {
+                "lat": 20.3,
+                "lng": -99.6
+            },
+            "impact_radius": "Regional"
+        },
+        {
+            "name": "Dos Bocas: Operación",
+            "value": 35000,
+            "description": "Lo que cuesta mantener prendida la refinería para que empiece a sacar gasolina.",
+            "coordinates": {
+                "lat": 18.4239,
+                "lng": -93.2205
+            },
+            "impact_radius": "Local"
+        },
+        {
+            "name": "Riego y Agua",
+            "value": 28000,
+            "description": "Canales y tuberías para que el campo no se quede seco y tengamos comida.",
+            "coordinates": {
+                "lat": 25.0,
+                "lng": -107.0
+            },
+            "impact_radius": "Regional (Norte)"
+        },
+        {
+            "name": "Carreteras Federales",
+            "value": 25000,
+            "description": "Mantenimiento para las carreteras que ya conoces y que siempre tienen baches.",
+            "coordinates": {
+                "lat": 22.0,
+                "lng": -100.0
+            },
+            "impact_radius": "Nacional"
+        },
+        {
+            "name": "Puertos y Aduanas",
+            "value": 22000,
+            "description": "Modernización de las entradas de mercancía para que el comercio no se detenga.",
+            "coordinates": {
+                "lat": 19.18,
+                "lng": -96.12
+            },
+            "impact_radius": "Puntos Clave"
+        },
+        {
+            "name": "Tren Toluca (Insurgente)",
+            "value": 18000,
+            "description": "El tren que tardó 10 años en terminarse y ahora requiere dinero para moverse.",
+            "coordinates": {
+                "lat": 19.2878,
+                "lng": -99.5029
+            },
+            "impact_radius": "Local"
+        },
+        {
+            "name": "Corredor del Istmo",
+            "value": 15000,
+            "description": "Parques industriales en el sur para atraer empresas que hoy están en China.",
+            "coordinates": {
+                "lat": 17.5,
+                "lng": -94.5
+            },
+            "impact_radius": "Regional"
+        }
+    ],
+    "strategic_projects_concentration": {
+        "share_of_investment": 42.3,
+        "regional_concentration": 51.4
+    },
+    "sankey_data": {
+        "links": [
+            {
+                "source": "total",
+                "target": "comprometido",
+                "value": 3100000
+            },
+            {
+                "source": "total",
+                "target": "programable",
+                "value": 7090000
+            },
+            {
+                "source": "comprometido",
+                "target": "deuda",
+                "value": 1570000
+            },
+            {
+                "source": "comprometido",
+                "target": "participaciones",
+                "value": 1530000
+            },
+            {
+                "source": "programable",
+                "target": "salud",
+                "value": 924300
+            },
+            {
+                "source": "programable",
+                "target": "jubilados",
+                "value": 1150000
+            },
+            {
+                "source": "programable",
+                "target": "bienestar",
+                "value": 482000
+            },
+            {
+                "source": "programable",
+                "target": "sembrando",
+                "value": 38900
+            },
+            {
+                "source": "programable",
+                "target": "jovenes",
+                "value": 24200
+            },
+            {
+                "source": "programable",
+                "target": "inversion",
+                "value": 976800
+            },
+            {
+                "source": "programable",
+                "target": "operacion",
+                "value": 2493800
+            }
+        ]
+    },
+    "state_finances": {
+        "promedio_nacional_per_capita": 28430,
+        "estados": [
+            {
+                "id": "ags",
+                "nombre": "Aguascalientes",
+                "poblacion": 1500000,
+                "totalFederal": 32700000000,
+                "participaciones": 18500000000,
+                "aportaciones": 14200000000,
+                "perCapita": 21800,
+                "perCapitaParticipaciones": 12333,
+                "perCapitaAportaciones": 9467,
+                "pobrezaPorcentaje": 26.2
+            },
+            {
+                "id": "bc",
+                "nombre": "Baja California",
+                "poblacion": 3800000,
+                "totalFederal": 85400000000,
+                "participaciones": 48200000000,
+                "aportaciones": 37200000000,
+                "perCapita": 22473,
+                "perCapitaParticipaciones": 12684,
+                "perCapitaAportaciones": 9789,
+                "pobrezaPorcentaje": 22.5
+            },
+            {
+                "id": "chis",
+                "nombre": "Chiapas",
+                "poblacion": 5600000,
+                "totalFederal": 125400000000,
+                "participaciones": 42000000000,
+                "aportaciones": 83400000000,
+                "perCapita": 22392,
+                "perCapitaParticipaciones": 7500,
+                "perCapitaAportaciones": 14892,
+                "pobrezaPorcentaje": 67.4
+            },
+            {
+                "id": "cdmx",
+                "nombre": "Ciudad de México",
+                "poblacion": 9200000,
+                "totalFederal": 245000000000,
+                "participaciones": 142000000000,
+                "aportaciones": 103000000000,
+                "perCapita": 26630,
+                "perCapitaParticipaciones": 15434,
+                "perCapitaAportaciones": 11196,
+                "pobrezaPorcentaje": 30
+            },
+            {
+                "id": "edomex",
+                "nombre": "Estado de México",
+                "poblacion": 17000000,
+                "totalFederal": 385000000000,
+                "participaciones": 220000000000,
+                "aportaciones": 165000000000,
+                "perCapita": 22647,
+                "perCapitaParticipaciones": 12941,
+                "perCapitaAportaciones": 9706,
+                "pobrezaPorcentaje": 48.9
+            },
+            {
+                "id": "nl",
+                "nombre": "Nuevo León",
+                "poblacion": 5800000,
+                "totalFederal": 132000000000,
+                "participaciones": 82000000000,
+                "aportaciones": 50000000000,
+                "perCapita": 22758,
+                "perCapitaParticipaciones": 14137,
+                "perCapitaAportaciones": 8621,
+                "pobrezaPorcentaje": 16
+            },
+            {
+                "id": "oax",
+                "nombre": "Oaxaca",
+                "poblacion": 4100000,
+                "totalFederal": 115000000000,
+                "participaciones": 38000000000,
+                "aportaciones": 77000000000,
+                "perCapita": 28048,
+                "perCapitaParticipaciones": 9268,
+                "perCapitaAportaciones": 18780,
+                "pobrezaPorcentaje": 58.4
+            }
+        ]
+    }
+}

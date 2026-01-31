@@ -1,0 +1,117 @@
+{
+    "meta": {
+        "version": "1.0.0",
+        "last_updated": "2026-01-31",
+        "source": "Unidad de Inteligencia Ciudadana",
+        "description": "Base de datos maestra de empresas contratistas y análisis de riesgo."
+    },
+    "companies": [
+        {
+            "id": "c1",
+            "name": "Construcciones y Dragados del Istmo S.A. de C.V.",
+            "rfc": "CDI123456XYZ",
+            "total_amount": 45000000000,
+            "creation_date": "2025-11-15",
+            "address": "Av. Paseo de la Reforma 123, Lote 45, CDMX (Baldío)",
+            "risk_score": "high",
+            "risk_reasons": [
+                "Empresa creada 15 días antes de recibir su primer contrato millonario.",
+                "Domicilio fiscal identificado como terreno baldío o dirección no comercial."
+            ],
+            "contracts": [
+                {
+                    "project_id": "p1",
+                    "project_name": "Tren Maya",
+                    "amount": 30000000000
+                },
+                {
+                    "project_id": "p2",
+                    "project_name": "Dos Bocas",
+                    "amount": 15000000000
+                }
+            ]
+        },
+        {
+            "id": "c2",
+            "name": "Soluciones Tecnológicas 'EFOS' S.C.",
+            "rfc": "STE980706ABC",
+            "total_amount": 12000000000,
+            "creation_date": "2010-05-20",
+            "address": "Calle Ficticia 88, Guadalajara, Jal.",
+            "risk_score": "high",
+            "risk_reasons": [
+                "Identificada en el listado 69-B del SAT como empresa que factura operaciones simuladas (EFOS)."
+            ],
+            "contracts": [
+                {
+                    "project_id": "p3",
+                    "project_name": "PEMEX: Rescate de Deuda",
+                    "amount": 12000000000
+                }
+            ]
+        },
+        {
+            "id": "c3",
+            "name": "Infraestructura Global S.A.",
+            "rfc": "IGL050403GHI",
+            "total_amount": 25000000000,
+            "creation_date": "2005-01-10",
+            "address": "Torre Mayor, Piso 42, CDMX",
+            "risk_score": "low",
+            "risk_reasons": [],
+            "contracts": [
+                {
+                    "project_id": "p1",
+                    "project_name": "Tren Maya",
+                    "amount": 25000000000
+                }
+            ]
+        },
+        {
+            "id": "c4",
+            "name": "Logística de Oriente",
+            "rfc": "LOR190807JKL",
+            "total_amount": 8000000000,
+            "creation_date": "2025-06-01",
+            "address": "Bodega 14, Puerto de Veracruz",
+            "risk_score": "medium",
+            "risk_reasons": [
+                "Empresa de reciente creación (< 6 meses al momento del contrato)."
+            ],
+            "contracts": [
+                {
+                    "project_id": "p4",
+                    "project_name": "Tren Interoceánico",
+                    "amount": 8000000000
+                }
+            ]
+        }
+    ],
+    "strategic_nodes": [
+        {
+            "id": "p1",
+            "name": "Tren Maya",
+            "value": 142000
+        },
+        {
+            "id": "p2",
+            "name": "Dos Bocas",
+            "value": 35000
+        },
+        {
+            "id": "p3",
+            "name": "PEMEX Rescate",
+            "value": 165000
+        },
+        {
+            "id": "p4",
+            "name": "Tren Interoceánico",
+            "value": 85000
+        },
+        {
+            "id": "p5",
+            "name": "CFE Luz y Redes",
+            "value": 98000
+        }
+    ]
+}

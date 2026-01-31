@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portal Transparencia México 🇲🇽
 
-## Getting Started
+Plataforma ciudadana para el seguimiento del gasto público y la rendición de cuentas en México.
 
-First, run the development server:
+## Características
+
+- **Flujo de Recursos**: Diagrama Sankey interactivo que visualiza el origen y destino del presupuesto federal
+- **Explorador de Presupuesto**: Treemap navegable con drill-down por jerarquía (Ramo → Programa → Partida)
+- **Mapa de Obras**: Geolocalización de obras públicas y contratos en todo el territorio nacional
+- **Análisis de Gasto**: Comparativa de presupuesto aprobado vs ejercido por ramo y programa
+
+## Stack Tecnológico
+
+- **Framework**: Next.js 14 (App Router)
+- **Lenguaje**: TypeScript
+- **Estilos**: Tailwind CSS
+- **Visualizaciones**: D3.js (Sankey, Treemap)
+- **Mapas**: Leaflet
+- **Iconos**: Lucide React
+
+## Instalación
 
 ```bash
+# Clonar repositorio
+git clone https://github.com/portal-transparencia-mx/portal.git
+
+# Instalar dependencias
+npm install
+
+# Ejecutar en desarrollo
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Compilar para producción
+npm run build
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Estructura del Proyecto
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+src/
+├── app/                    # Rutas de la aplicación
+│   ├── page.tsx           # Landing page
+│   ├── presupuesto/       # Análisis de presupuesto
+│   ├── flujo-recursos/    # Diagrama Sankey
+│   ├── explorador/        # Treemap navegable
+│   └── mapa-obras/        # Mapa geolocalizado
+├── components/
+│   ├── layout/            # Navbar, Footer
+│   ├── charts/            # SankeyChart, TreemapChart
+│   ├── maps/              # ObrasMap
+│   └── ui/                # StatCard, FeatureCard, ProgressBar
+├── data/
+│   └── mock/              # Datos de demostración
+└── lib/
+    └── utils.ts           # Utilidades y formateo
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Fuentes de Datos (MVP)
 
-## Learn More
+Este MVP utiliza datos de demostración realistas basados en:
+- Presupuesto de Egresos de la Federación (PEF) 2024
+- Estructura presupuestaria real (ramos, programas)
+- Ubicaciones aproximadas de obras públicas
 
-To learn more about Next.js, take a look at the following resources:
+Para la versión producción, se conectará a:
+- API de Transparencia Presupuestaria (SHCP)
+- Plataforma Nacional de Transparencia (PNT/INAI)
+- Gaceta Parlamentaria / SIL
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Licencia
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+MIT License - Código abierto para la sociedad civil
 
-## Deploy on Vercel
+## Contribuir
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Las contribuciones son bienvenidas. Por favor abre un issue primero para discutir los cambios propuestos.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+Desarrollado con ❤️ para la transparencia y rendición de cuentas en México.
