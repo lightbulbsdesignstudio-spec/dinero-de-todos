@@ -1,8 +1,8 @@
 {
     "meta": {
-        "version": "PEF 2026 Updated (Auto-7220)",
-        "last_updated": "2026-01-31",
-        "source_url": "https://www.transparencia.hacienda.gob.mx"
+        "version": "PEF 2026 v1.0 (Datos Reales — SHCP)",
+        "last_updated": "2026-02-25",
+        "source_url": "https://www.transparenciapresupuestaria.gob.mx/work/models/PTP/DatosAbiertos/Bases_de_datos_presupuesto/CSV/PEF_2026.csv"
     },
     "indicators": {
         "national_score": 5.8,
@@ -58,10 +58,11 @@
         }
     ],
     "budget_totals": {
-        "grand_total": 10190001168343,
-        "programmable": 7090000000000,
-        "debt_cost": 1570000000000,
-        "physical_investment": 976800000000
+        "grand_total": 11744842670855,
+        "programmable": 8991115713652,
+        "debt_cost": 1297681062923,
+        "physical_investment": 431505014569,
+        "ejercido_total": null
     },
     "strategic_projects": [
         {
@@ -109,8 +110,8 @@
             "value": 72000,
             "description": "Construcción de bases militares en todo el país para tareas de seguridad.",
             "coordinates": {
-                "lat": 21.0,
-                "lng": -101.0
+                "lat": 21,
+                "lng": -101
             },
             "impact_radius": "Nacional"
         },
@@ -149,8 +150,8 @@
             "value": 28000,
             "description": "Canales y tuberías para que el campo no se quede seco y tengamos comida.",
             "coordinates": {
-                "lat": 25.0,
-                "lng": -107.0
+                "lat": 25,
+                "lng": -107
             },
             "impact_radius": "Regional (Norte)"
         },
@@ -159,8 +160,8 @@
             "value": 25000,
             "description": "Mantenimiento para las carreteras que ya conoces y que siempre tienen baches.",
             "coordinates": {
-                "lat": 22.0,
-                "lng": -100.0
+                "lat": 22,
+                "lng": -100
             },
             "impact_radius": "Nacional"
         },
