@@ -22,7 +22,7 @@ export default function ShareAction({ scenario, data, compact = false, className
     const WEBSITE_URL = 'https://dinerodetodos.mx';
 
     const generateMessage = () => {
-        const amountStr = data.amount ? `$${humanizarNumero(data.amount).textoCorto}` : '';
+        const amountStr = data.amount ? `${humanizarNumero(data.amount).textoCorto}` : '';
         const location = data.location || 'México';
 
         switch (scenario) {
@@ -94,7 +94,7 @@ export function getShareLinks(scenario: ShareScenario, data: any) {
     // Reduplicating logic slightly for raw string usage in Leaflet
 
     const WEBSITE_URL = 'https://dinerodetodos.mx';
-    const amountStr = data.amount ? `$${humanizarNumero(data.amount).textoCorto}` : '';
+    const amountStr = data.amount ? `${humanizarNumero(data.amount).textoCorto}` : '';
     const location = data.location || 'México';
 
     let message = '';

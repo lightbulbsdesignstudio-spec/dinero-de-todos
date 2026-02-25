@@ -62,7 +62,7 @@ export default function MapaObrasPage() {
             <div className="hidden md:block text-right">
               <span className="block text-[10px] text-gray-400 font-bold uppercase tracking-widest">Inversión Mapeada</span>
               <span className="text-2xl font-black text-[#00A896]">
-                {totalInvestment > 0 ? `$${humanizarNumero(totalInvestment).textoCorto}` : '---'}
+                {totalInvestment > 0 ? `${humanizarNumero(totalInvestment).textoCorto}` : '---'}
               </span>
             </div>
           </div>
